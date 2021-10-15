@@ -17,6 +17,8 @@ import { HighlightDirective } from './highlight.directive';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MenuThemeComponent } from './menu-theme/menu-theme.component';
 import { FormsPModule } from './forms/forms.module';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { TableComponent } from './table/table.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,6 +30,8 @@ import { FormsPModule } from './forms/forms.module';
     RxjsComponent,
     HighlightDirective,
     MenuThemeComponent,
+    PageNotFoundComponent,
+    TableComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-unversal' }),

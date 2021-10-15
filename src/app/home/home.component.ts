@@ -1,16 +1,17 @@
 import { Component, OnInit } from '@angular/core';
+import { DemoService } from '../services/demo.service';
+import { PeriodicElement } from '../services/periodic-element';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.sass']
+  styleUrls: ['./home.component.sass'],
 })
 export class HomeComponent implements OnInit {
-
-  constructor() { }
+  
+  constructor() {}
 
   ngOnInit(): void {
 
   }
-
 }
