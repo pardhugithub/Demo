@@ -6,7 +6,7 @@ import {
   Validators,
 } from '@angular/forms';
 
-import { MustMatch } from '../utils/must-match.validator';
+import { MustMatch } from '../../utils/must-match.validator';
 
 @Component({
   selector: 'app-reactive-forms',
