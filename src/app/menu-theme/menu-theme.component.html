@@ -1,0 +1,14 @@
+<section class="mat-typography app-panel" fxLayout="column" [ngClass]="themeClass">
+	<mat-toolbar color="primary">
+    <span fxFlex>Angular Child Routes</span>
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>format_color_fill</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item *ngFor="let t of themeService.themes$ | async" (click)="themeService.setTheme(t)">{{t.display}}</button>
+    </mat-menu>
+  </mat-toolbar>
+	<section class="app-body mat-app-background">
+    <p>Angular Material Themes Examples</p>
+	</section>
+</section>
