@@ -1,0 +1,7 @@
+<p>Parent Component</p>
+<p>{{parentFood}}</p>
+<p>{{triggerParent()}}</p>
+<ul>
+  <li *ngFor="let item of items">{{item}}</li>
+</ul>
+<app-child [item]="currentItem" (newItemEvent)="addItem($event)"></app-child>
